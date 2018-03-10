@@ -73,7 +73,6 @@ export default class SpotifyAlbumBackgroundGenerator extends Component {
             'backgroundImage': null,
             'error': 'There was an error connecting to Spotify. Please try connecting your account again.',
           });
-          this.props.history.push('/trinkets/favourite-spotify-albums-background-generator');
 
           return;
         }
@@ -166,7 +165,7 @@ export default class SpotifyAlbumBackgroundGenerator extends Component {
 
   render() {
     return (
-      <div className="wrapper">
+      <div className="wrapper sbg-wrapper">
         {this.state.error &&
           <p className="error-message"><i className="fa fa-warning"></i> {this.state.error}</p>
         }
